@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Web Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <header class="row bg-primary text-white p-3">
+      <div class="col">
+        <h1>Advanced System Design and Implementation</h1>
+      </div>
+    </header>
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Analytics</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="chart-container mt-4">
+          <canvas id="myChart"></canvas>
+        </div>
+      </main>
+    </div>
+    <footer class="row bg-light text-center p-3">
+      <div class="col">
+        <p>© 2024 rapa</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
